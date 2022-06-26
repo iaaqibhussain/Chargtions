@@ -1,0 +1,871 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E61E83B82829C400002311E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83B72829C400002311E6 /* AppDelegate.swift */; };
+		E61E83BA2829C400002311E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83B92829C400002311E6 /* SceneDelegate.swift */; };
+		E61E83BC2829C400002311E6 /* ChargingPointsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83BB2829C400002311E6 /* ChargingPointsMapViewController.swift */; };
+		E61E83BF2829C400002311E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61E83BD2829C400002311E6 /* Main.storyboard */; };
+		E61E83C12829C406002311E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E61E83C02829C406002311E6 /* Assets.xcassets */; };
+		E61E83C42829C406002311E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61E83C22829C406002311E6 /* LaunchScreen.storyboard */; };
+		E61E83CF2829C406002311E6 /* ChargingPointsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83CE2829C406002311E6 /* ChargingPointsViewModelTests.swift */; };
+		E61E83D92829C406002311E6 /* ChargtionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83D82829C406002311E6 /* ChargtionsUITests.swift */; };
+		E61E83DB2829C406002311E6 /* ChargtionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83DA2829C406002311E6 /* ChargtionsUITestsLaunchTests.swift */; };
+		E61E83F528302A0B002311E6 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83EB28302A0B002311E6 /* RequestManager.swift */; };
+		E61E83F628302A0B002311E6 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83ED28302A0B002311E6 /* DataParser.swift */; };
+		E61E83F728302A0B002311E6 /* ChargingPointResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83EF28302A0B002311E6 /* ChargingPointResponse.swift */; };
+		E61E83F828302A0B002311E6 /* ChargingPointsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83F228302A0B002311E6 /* ChargingPointsRequest.swift */; };
+		E61E83F928302A0B002311E6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83F328302A0B002311E6 /* Request.swift */; };
+		E61E83FA28302A0C002311E6 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83F428302A0B002311E6 /* NetworkError.swift */; };
+		E61E83FC28312B65002311E6 /* ChargingPointDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83FB28312B65002311E6 /* ChargingPointDataMapper.swift */; };
+		E61E840028312CA2002311E6 /* ChargingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E83FF28312CA2002311E6 /* ChargingPoint.swift */; };
+		E61E84042831307C002311E6 /* ChargingPointDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E84032831307C002311E6 /* ChargingPointDetailsViewController.swift */; };
+		E61E84062831311E002311E6 /* ChargingPointsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E84052831311E002311E6 /* ChargingPointsViewModel.swift */; };
+		E61E84092831333D002311E6 /* ChargingPointsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E84082831333D002311E6 /* ChargingPointsRepository.swift */; };
+		E61E840C28313551002311E6 /* CharingPointsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E840B28313551002311E6 /* CharingPointsInteractor.swift */; };
+		E61E840E28313D3B002311E6 /* ChargingPointsViewDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E840D28313D3B002311E6 /* ChargingPointsViewDataMapper.swift */; };
+		E61E8410283155FE002311E6 /* ChargingPointDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E840F283155FE002311E6 /* ChargingPointDetailsViewModel.swift */; };
+		E61E8413283161AA002311E6 /* CoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E8412283161AA002311E6 /* CoordinateRegion.swift */; };
+		E61E841528316236002311E6 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E841428316236002311E6 /* UIViewController+Extension.swift */; };
+		E61E8417283163B7002311E6 /* ChargingPointsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E8416283163B7002311E6 /* ChargingPointsRouter.swift */; };
+		E61E8419283163E3002311E6 /* ChargingPointsMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E8418283163E3002311E6 /* ChargingPointsMapRouter.swift */; };
+		E61E842428316B3B002311E6 /* ChargingPointsInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E842328316B3B002311E6 /* ChargingPointsInteractorMock.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E61E83CB2829C406002311E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E61E83AC2829C400002311E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E61E83B32829C400002311E6;
+			remoteInfo = Chargtions;
+		};
+		E61E83D52829C406002311E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E61E83AC2829C400002311E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E61E83B32829C400002311E6;
+			remoteInfo = Chargtions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E61E83B42829C400002311E6 /* Chargtions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chargtions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E61E83B72829C400002311E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E61E83B92829C400002311E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E61E83BB2829C400002311E6 /* ChargingPointsMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingPointsMapViewController.swift; sourceTree = "<group>"; };
+		E61E83BE2829C400002311E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E61E83C02829C406002311E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E61E83C32829C406002311E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E61E83C52829C406002311E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E61E83CA2829C406002311E6 /* ChargtionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargtionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E61E83CE2829C406002311E6 /* ChargingPointsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingPointsViewModelTests.swift; sourceTree = "<group>"; };
+		E61E83D42829C406002311E6 /* ChargtionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargtionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E61E83D82829C406002311E6 /* ChargtionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargtionsUITests.swift; sourceTree = "<group>"; };
+		E61E83DA2829C406002311E6 /* ChargtionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargtionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E61E83EB28302A0B002311E6 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		E61E83ED28302A0B002311E6 /* DataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		E61E83EF28302A0B002311E6 /* ChargingPointResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargingPointResponse.swift; sourceTree = "<group>"; };
+		E61E83F228302A0B002311E6 /* ChargingPointsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargingPointsRequest.swift; sourceTree = "<group>"; };
+		E61E83F328302A0B002311E6 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		E61E83F428302A0B002311E6 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		E61E83FB28312B65002311E6 /* ChargingPointDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingPointDataMapper.swift; sourceTree = "<group>"; };
+		E61E83FF28312CA2002311E6 /* ChargingPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingPoint.swift; sourceTree = "<group>"; };
+		E61E84032831307C002311E6 /* ChargingPointDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingPointDetailsViewController.swift; sourceTree = "<group>"; };
+		E61E84052831311E002311E6 /* ChargingPointsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingPointsViewModel.swift; sourceTree = "<group>"; };
+		E61E84082831333D002311E6 /* ChargingPointsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingPointsRepository.swift; sourceTree = "<group>"; };
+		E61E840B28313551002311E6 /* CharingPointsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharingPointsInteractor.swift; sourceTree = "<group>"; };
+		E61E840D28313D3B002311E6 /* ChargingPointsViewDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingPointsViewDataMapper.swift; sourceTree = "<group>"; };
+		E61E840F283155FE002311E6 /* ChargingPointDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingPointDetailsViewModel.swift; sourceTree = "<group>"; };
+		E61E8412283161AA002311E6 /* CoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateRegion.swift; sourceTree = "<group>"; };
+		E61E841428316236002311E6 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		E61E8416283163B7002311E6 /* ChargingPointsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingPointsRouter.swift; sourceTree = "<group>"; };
+		E61E8418283163E3002311E6 /* ChargingPointsMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingPointsMapRouter.swift; sourceTree = "<group>"; };
+		E61E842328316B3B002311E6 /* ChargingPointsInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingPointsInteractorMock.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E61E83B12829C400002311E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E61E83C72829C406002311E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E61E83D12829C406002311E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E61E83AB2829C400002311E6 = {
+			isa = PBXGroup;
+			children = (
+				E61E83B62829C400002311E6 /* Chargtions */,
+				E61E83CD2829C406002311E6 /* ChargtionsTests */,
+				E61E83D72829C406002311E6 /* ChargtionsUITests */,
+				E61E83B52829C400002311E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E61E83B52829C400002311E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E61E83B42829C400002311E6 /* Chargtions.app */,
+				E61E83CA2829C406002311E6 /* ChargtionsTests.xctest */,
+				E61E83D42829C406002311E6 /* ChargtionsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E61E83B62829C400002311E6 /* Chargtions */ = {
+			isa = PBXGroup;
+			children = (
+				E61E84112831617C002311E6 /* Controller */,
+				E61E83FE28312C93002311E6 /* Domain */,
+				E61E83FD28312C87002311E6 /* Data */,
+				E61E8421283164AF002311E6 /* Router */,
+				E61E8420283164A1002311E6 /* Extension */,
+				E61E83B72829C400002311E6 /* AppDelegate.swift */,
+				E61E83B92829C400002311E6 /* SceneDelegate.swift */,
+				E61E83BD2829C400002311E6 /* Main.storyboard */,
+				E61E83C02829C406002311E6 /* Assets.xcassets */,
+				E61E83C22829C406002311E6 /* LaunchScreen.storyboard */,
+				E61E83C52829C406002311E6 /* Info.plist */,
+			);
+			path = Chargtions;
+			sourceTree = "<group>";
+		};
+		E61E83CD2829C406002311E6 /* ChargtionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E61E842228316B25002311E6 /* Mock */,
+				E61E83CE2829C406002311E6 /* ChargingPointsViewModelTests.swift */,
+			);
+			path = ChargtionsTests;
+			sourceTree = "<group>";
+		};
+		E61E83D72829C406002311E6 /* ChargtionsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E61E83D82829C406002311E6 /* ChargtionsUITests.swift */,
+				E61E83DA2829C406002311E6 /* ChargtionsUITestsLaunchTests.swift */,
+			);
+			path = ChargtionsUITests;
+			sourceTree = "<group>";
+		};
+		E61E83EA28302A0B002311E6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E61E83EB28302A0B002311E6 /* RequestManager.swift */,
+				E61E83EC28302A0B002311E6 /* Parser */,
+				E61E83EE28302A0B002311E6 /* Model */,
+				E61E83F028302A0B002311E6 /* Request */,
+				E61E83F428302A0B002311E6 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E61E83EC28302A0B002311E6 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				E61E83ED28302A0B002311E6 /* DataParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		E61E83EE28302A0B002311E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E61E83EF28302A0B002311E6 /* ChargingPointResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E61E83F028302A0B002311E6 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E61E83F128302A0B002311E6 /* ChargingPoints */,
+				E61E83F328302A0B002311E6 /* Request.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		E61E83F128302A0B002311E6 /* ChargingPoints */ = {
+			isa = PBXGroup;
+			children = (
+				E61E83F228302A0B002311E6 /* ChargingPointsRequest.swift */,
+			);
+			path = ChargingPoints;
+			sourceTree = "<group>";
+		};
+		E61E83FD28312C87002311E6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E61E83EA28302A0B002311E6 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E61E83FE28312C93002311E6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E61E840A28313541002311E6 /* Interactor */,
+				E61E84072831332D002311E6 /* Repository */,
+				E61E840228312D00002311E6 /* Model */,
+				E61E840128312CB4002311E6 /* Mapper */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E61E840128312CB4002311E6 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				E61E83FB28312B65002311E6 /* ChargingPointDataMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		E61E840228312D00002311E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E61E8412283161AA002311E6 /* CoordinateRegion.swift */,
+				E61E83FF28312CA2002311E6 /* ChargingPoint.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E61E84072831332D002311E6 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E61E84082831333D002311E6 /* ChargingPointsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E61E840A28313541002311E6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E61E840B28313551002311E6 /* CharingPointsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E61E84112831617C002311E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E61E841A28316415002311E6 /* Map */,
+				E61E841B28316426002311E6 /* Details */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E61E841A28316415002311E6 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E61E841F28316489002311E6 /* Mapper */,
+				E61E841D28316446002311E6 /* Router */,
+				E61E841C28316437002311E6 /* ViewModel */,
+				E61E83BB2829C400002311E6 /* ChargingPointsMapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		E61E841B28316426002311E6 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				E61E84032831307C002311E6 /* ChargingPointDetailsViewController.swift */,
+				E61E841E28316468002311E6 /* ViewModel */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		E61E841C28316437002311E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E61E84052831311E002311E6 /* ChargingPointsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E61E841D28316446002311E6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E61E8418283163E3002311E6 /* ChargingPointsMapRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E61E841E28316468002311E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E61E840F283155FE002311E6 /* ChargingPointDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E61E841F28316489002311E6 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				E61E840D28313D3B002311E6 /* ChargingPointsViewDataMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		E61E8420283164A1002311E6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E61E841428316236002311E6 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E61E8421283164AF002311E6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E61E8416283163B7002311E6 /* ChargingPointsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E61E842228316B25002311E6 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				E61E842328316B3B002311E6 /* ChargingPointsInteractorMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E61E83B32829C400002311E6 /* Chargtions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E61E83DE2829C406002311E6 /* Build configuration list for PBXNativeTarget "Chargtions" */;
+			buildPhases = (
+				E61E83B02829C400002311E6 /* Sources */,
+				E61E83B12829C400002311E6 /* Frameworks */,
+				E61E83B22829C400002311E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chargtions;
+			productName = Chargtions;
+			productReference = E61E83B42829C400002311E6 /* Chargtions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E61E83C92829C406002311E6 /* ChargtionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E61E83E12829C406002311E6 /* Build configuration list for PBXNativeTarget "ChargtionsTests" */;
+			buildPhases = (
+				E61E83C62829C406002311E6 /* Sources */,
+				E61E83C72829C406002311E6 /* Frameworks */,
+				E61E83C82829C406002311E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E61E83CC2829C406002311E6 /* PBXTargetDependency */,
+			);
+			name = ChargtionsTests;
+			productName = ChargtionsTests;
+			productReference = E61E83CA2829C406002311E6 /* ChargtionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E61E83D32829C406002311E6 /* ChargtionsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E61E83E42829C406002311E6 /* Build configuration list for PBXNativeTarget "ChargtionsUITests" */;
+			buildPhases = (
+				E61E83D02829C406002311E6 /* Sources */,
+				E61E83D12829C406002311E6 /* Frameworks */,
+				E61E83D22829C406002311E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E61E83D62829C406002311E6 /* PBXTargetDependency */,
+			);
+			name = ChargtionsUITests;
+			productName = ChargtionsUITests;
+			productReference = E61E83D42829C406002311E6 /* ChargtionsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E61E83AC2829C400002311E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					E61E83B32829C400002311E6 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					E61E83C92829C406002311E6 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = E61E83B32829C400002311E6;
+					};
+					E61E83D32829C406002311E6 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = E61E83B32829C400002311E6;
+					};
+				};
+			};
+			buildConfigurationList = E61E83AF2829C400002311E6 /* Build configuration list for PBXProject "Chargtions" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E61E83AB2829C400002311E6;
+			productRefGroup = E61E83B52829C400002311E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E61E83B32829C400002311E6 /* Chargtions */,
+				E61E83C92829C406002311E6 /* ChargtionsTests */,
+				E61E83D32829C406002311E6 /* ChargtionsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E61E83B22829C400002311E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E61E83C42829C406002311E6 /* LaunchScreen.storyboard in Resources */,
+				E61E83C12829C406002311E6 /* Assets.xcassets in Resources */,
+				E61E83BF2829C400002311E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E61E83C82829C406002311E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E61E83D22829C406002311E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E61E83B02829C400002311E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E61E840C28313551002311E6 /* CharingPointsInteractor.swift in Sources */,
+				E61E8413283161AA002311E6 /* CoordinateRegion.swift in Sources */,
+				E61E83BC2829C400002311E6 /* ChargingPointsMapViewController.swift in Sources */,
+				E61E83F928302A0B002311E6 /* Request.swift in Sources */,
+				E61E840E28313D3B002311E6 /* ChargingPointsViewDataMapper.swift in Sources */,
+				E61E83FC28312B65002311E6 /* ChargingPointDataMapper.swift in Sources */,
+				E61E8410283155FE002311E6 /* ChargingPointDetailsViewModel.swift in Sources */,
+				E61E84092831333D002311E6 /* ChargingPointsRepository.swift in Sources */,
+				E61E841528316236002311E6 /* UIViewController+Extension.swift in Sources */,
+				E61E83F828302A0B002311E6 /* ChargingPointsRequest.swift in Sources */,
+				E61E83F628302A0B002311E6 /* DataParser.swift in Sources */,
+				E61E840028312CA2002311E6 /* ChargingPoint.swift in Sources */,
+				E61E83F728302A0B002311E6 /* ChargingPointResponse.swift in Sources */,
+				E61E83B82829C400002311E6 /* AppDelegate.swift in Sources */,
+				E61E8417283163B7002311E6 /* ChargingPointsRouter.swift in Sources */,
+				E61E83FA28302A0C002311E6 /* NetworkError.swift in Sources */,
+				E61E84062831311E002311E6 /* ChargingPointsViewModel.swift in Sources */,
+				E61E84042831307C002311E6 /* ChargingPointDetailsViewController.swift in Sources */,
+				E61E8419283163E3002311E6 /* ChargingPointsMapRouter.swift in Sources */,
+				E61E83BA2829C400002311E6 /* SceneDelegate.swift in Sources */,
+				E61E83F528302A0B002311E6 /* RequestManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E61E83C62829C406002311E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E61E842428316B3B002311E6 /* ChargingPointsInteractorMock.swift in Sources */,
+				E61E83CF2829C406002311E6 /* ChargingPointsViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E61E83D02829C406002311E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E61E83DB2829C406002311E6 /* ChargtionsUITestsLaunchTests.swift in Sources */,
+				E61E83D92829C406002311E6 /* ChargtionsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E61E83CC2829C406002311E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E61E83B32829C400002311E6 /* Chargtions */;
+			targetProxy = E61E83CB2829C406002311E6 /* PBXContainerItemProxy */;
+		};
+		E61E83D62829C406002311E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E61E83B32829C400002311E6 /* Chargtions */;
+			targetProxy = E61E83D52829C406002311E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E61E83BD2829C400002311E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E61E83BE2829C400002311E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E61E83C22829C406002311E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E61E83C32829C406002311E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E61E83DC2829C406002311E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E61E83DD2829C406002311E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E61E83DF2829C406002311E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chargtions/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodesnippets.Chargtions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E61E83E02829C406002311E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chargtions/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodesnippets.Chargtions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E61E83E22829C406002311E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodesnippets.ChargtionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargtions.app/Chargtions";
+			};
+			name = Debug;
+		};
+		E61E83E32829C406002311E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodesnippets.ChargtionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargtions.app/Chargtions";
+			};
+			name = Release;
+		};
+		E61E83E52829C406002311E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodesnippets.ChargtionsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chargtions;
+			};
+			name = Debug;
+		};
+		E61E83E62829C406002311E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodesnippets.ChargtionsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chargtions;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E61E83AF2829C400002311E6 /* Build configuration list for PBXProject "Chargtions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E61E83DC2829C406002311E6 /* Debug */,
+				E61E83DD2829C406002311E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E61E83DE2829C406002311E6 /* Build configuration list for PBXNativeTarget "Chargtions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E61E83DF2829C406002311E6 /* Debug */,
+				E61E83E02829C406002311E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E61E83E12829C406002311E6 /* Build configuration list for PBXNativeTarget "ChargtionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E61E83E22829C406002311E6 /* Debug */,
+				E61E83E32829C406002311E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E61E83E42829C406002311E6 /* Build configuration list for PBXNativeTarget "ChargtionsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E61E83E52829C406002311E6 /* Debug */,
+				E61E83E62829C406002311E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E61E83AC2829C400002311E6 /* Project object */;
+}
