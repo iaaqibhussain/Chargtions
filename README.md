@@ -5,8 +5,7 @@ It currently uses hardcoded lat-long to fetch the charging points for a given ra
 
 In order to run the project and see the pins on the map. Create an api key from https://openchargemap.org/. Clone the project and open `Request.swift` and update 
 ```
-   var apiKey: [String: String] {
-        ["key" : "you-api-key-here"]
-    }
-
+  var apiKey: [String: String] {
+    ["key" : "you-api-key-here"]
+  }
 ```
